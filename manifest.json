@@ -1,0 +1,14 @@
+{
+  "name": "Currency Converter",
+  "short_name": "Currency",
+  "icons": [
+    {
+      "src": "public/favicons/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#3E4EB8",
+  "theme_color": "#2F3BA2"
+}

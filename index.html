@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <link rel="manifest" href="manifest.json">
+
+  <title>Currency Converter</title>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="public/favicons/favicon.ico">
+
+  <!--Main CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/styles.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1>Currency Converter</h1>
+    <h2>This Web App deploys offline first capabilities</h2>
+  </header>
+  <main>
+    <!-- Intput areas -->
+    <section class="section__input">
+      <label for="amount">Enter value:</label>
+      <input id="amount" name="amount" type="number" placeholder="Enter amount" min="1" value="1" />
+
+      <label for="from_currency">Convert From:</label>
+      <select id="from_currency" class="currency__convert-from" aria-label="Filter currency to convert from"></select>
+
+      <label for="to_currency">Convert To:</label>
+      <select id="to_currency" class="currency__convert-to" aria-label="Filter currency to convert to"></select>
+
+      <button class="convert">Convert</button>
+    </section>
+    <!-- Output areas -->
+    <section class="section__output">
+      <label for="original_amount">Previous:</label>
+      <input id="original_amount" name="original_amount" type="text" disabled />
+
+      <label for="converted_amount">Result:</label>
+      <input id="converted_amount" name="converted_amount" type="text" disabled />
+    </section>
+</main>
+  
+  <!-- JS Files -->
+  <script src="public/js/app.min.js"></script>
+</body>
+
+</html>
